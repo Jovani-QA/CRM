@@ -1,8 +1,36 @@
 .titulo{
-    color:red
+    /*color:red */
+    color:cornflowerblue
 }
 
 .navbar{
-    background-color: hsl(262, 54%, 20%);
+    /*background-color: hsl(262, 54%, 20%);*/
+    background-color: #001d3d
+
+}
+/*#6375EA
+/* #3C75FA
+
+
+
+/* BANNER */
+
+#banner{
+    background-color: #0d6efd;
+    color: #ffffff;
+    padding: 100px 0 70px 0;
 }
 
+.btn-banner.btn-primary {
+    background-color: #001d3d; /* Cor de fundo para o primeiro botão */
+    /* Outros estilos se necessário */
+}
+
+.imagem-redimensionada {
+    width: 1024px;
+    height: 715px;
+}
+
+#banner img{
+    width: 100%;
+}
