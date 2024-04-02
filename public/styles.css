@@ -3,6 +3,11 @@
     color:cornflowerblue
 }
 
+
+p{
+    color: #8b8b8b;
+}
+
 .navbar{
     /*background-color: hsl(262, 54%, 20%);*/
     background-color: #001d3d
@@ -33,4 +38,77 @@
 
 #banner img{
     width: 100%;
+}
+.btn-banner{
+    margin: 8% 3% 5% 0;
+}
+
+
+/* FEATURES */
+
+#features{
+    padding: 7% 5%;
+}
+
+.feature-box{
+    text-align: center;
+    padding: 8%;
+}
+
+
+.icon{
+     /*color: #001d3d */
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+/* TESTEMUNHOS */
+
+#testemunho{
+    background-color: #f3f3f3;
+    color: #323338;
+    padding: 7% 15%;
+    text-align: center;
+}
+
+#testemunho img {
+    border-radius: 10%;
+    width: 10%;
+    margin: 20px;
+}
+
+/* PRECOS */
+
+#preco .titulo{
+    margin-top: 5%;
+}
+
+#preco{
+    padding: 5% 15% 8%;
+    color: #323338;
+}
+
+
+.card-header{
+    /*background-color: #001d3d */
+    background-color: #0d6efd;
+}
+
+.card-header h1 {
+    color: white; /* Define a cor do texto do h1 como branco */
+}
+
+.btn-primary {
+    background-color: #001d3d; /* Define a cor de fundo do botão como verde */
+    border-color: #001d3d; /* Define a cor da borda do botão como verde */
+    color: white; /* Define a cor do texto do botão como branco para melhor contraste */
+}
+
+
+/* FOOTER */
+
+#footer{
+    padding: 3% 15%;
+    text-align: center;
+    background-color: #f3f3f3;
 }

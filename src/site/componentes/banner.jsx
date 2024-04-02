@@ -6,9 +6,9 @@ function Banner(){
             <div className="row">
 
                 <div className="col-lg-6">
-                    <h1>Ajude o andrius e o carlão  melhorar sua jogabilidade.</h1>
-                    <h4>Doe alguns centamos para eles comprarem oculos e arrumarem o dedo.</h4>
-                    <button type="button" className="btn btn-dark btn-lg btn-banner  btn-primary">Criar uma conta</button>
+                    <h1>Douglas esse CRM é para vc .</h1>
+                    <h4>Plano de Saúde São José.</h4>
+                    <button type="button" className="btn btn-dark btn-lg btn-banner btn-primary">Criar uma conta</button>
                     <button type="button" className="btn btn-outline-light btn-lg btn-banner">Fazer Login</button>
                 </div>
 

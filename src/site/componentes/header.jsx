@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Header(){
-    return <nav className="navbar  navbar-expand-md navbar-dark">
+    return <nav className="navbar fixed-top navbar-expand-md navbar-dark">
 
     <div className="container">
             
@@ -19,7 +19,7 @@ function Header(){
               <a className="nav-link" aria-current="page" href="#banner">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#features">Features</a>
+              <a className="nav-link" aria-current="page" href="#feactures">Features</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#testemunho">Clientes</a>
