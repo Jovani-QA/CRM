@@ -1,3 +1,43 @@
- <img src='https://cdn-icons-png.flaticon.com/128/5567/5567449.png'/>
+.form-container{
+    height: 100vh;
+}
 
- xwnindxwinxoomcoemcoemcoemcoemco
+.form-signin{
+    width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+.form-signin input[type="password"] {
+margin-bottom: 10px;
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+}
+
+.login-links a{
+    text-decoration: none;
+    font-size: 10pt;
+}
+
+.modal-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    /*background-color:#0d6efd; */
+    background-color: #4526d1; /* Cor de fundo desejada */
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: 3px; /* Espaçamento entre o campo de e-mail e senha */
+    border-radius: 2;
+  }
+
+  .form-signin input[type="password"] {
+    margin-bottom: 50px; /* Espaçamento abaixo do campo de senha */
+    border-radius: 2;
+  }
