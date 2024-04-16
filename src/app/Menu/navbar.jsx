@@ -1,14 +1,14 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import './navbar.css';
 
-
-
-function Header(){
+function Navbar(){
     return <nav className="navbar fixed-top navbar-expand-md navbar-dark">
 
     <div className="container">
             
         <a className="navbar-brand" href="#">
-          <img src="Images/saude4.png" alt="" height="50" />
+          <img src="../Images/crm.png" alt="" height="40" />
         </a>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,9 +30,12 @@ function Header(){
               <a className="nav-link" aria-current="page" href="#preco">Planos e Preços</a>
             </li>
 
-           {/*<li className="nav-item">
+            {/*<li className="nav-item">
               <a className="nav-link" aria-current="page" href="#footer">Contato</a>
-            </li>*/}
+</li>*/}
+          
+
+
 
           </ul>
         </div>    
@@ -41,4 +44,4 @@ function Header(){
   </nav>;
   }
 
-export default Header;
+export default Navbar;

@@ -1,0 +1,37 @@
+/* Estilo do formulário de login */
+.form-container {
+    height: 100vh;
+    /*background: linear-gradient(to bottom, #4526d1, #fff); /* Gradiente de roxo para branco */
+    /*background: linear-gradient(to bottom, #4526d1, #301f70);*/
+    background: linear-gradient(to bottom, #301f70, #8063aa);
+  }
+  
+  .form-signin {
+    width: 330px;
+    padding: 15px;
+    margin: auto;
+ 
+  }
+  
+  .form-signin input[type="email"],
+  .form-signin input[type="password"] {
+    margin-bottom: 10px; /* Espaçamento entre e-mail, senha e o botão Acessar */
+    border-radius: 10px;
+  }
+  
+  .login-links a {
+    text-decoration: none;
+    font-size: 10pt;
+  }
+  
+  /* Estilo do formulário de login */
+  .form-container {
+    height: 100vh;
+   /* background-image: url('/public/images/13.jpg');/* Caminho para sua imagem de fundo */
+   /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('/public/images/13.jpg');*/
+    background: linear-gradient(to bottom, rgba(53, 6, 241, 0.1), rgba(255, 255, 255, 0.7)), url('/public/images/14.jpg');
+    background-size: cover; /* Garante que a imagem cubra todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-color: rgba(0, 0, 0, 0.5); /* Opacidade da cor de fundo do gradiente */
+}

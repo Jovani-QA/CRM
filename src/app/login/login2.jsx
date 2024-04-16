@@ -1,33 +1,85 @@
-import React from 'react';
-import './login.css';
-import {Link} from 'react-router-dom'
+import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
+import './login2.css';
 
-function Login2(){
-    return <div className="d-flex align-items-center text-center form-container">
+
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import firebase from '../Config/firebase'; // Assuming this imports app
+
+
+function Login2() {
+
+  const [email, setEmail] = useState('');
+  const [senha, setSenha] = useState('');
+  const [sucesso, setSucesso] = useState('');
+
+  function LoginUsuario(){
+    const auth = getAuth();
+
+    signInWithEmailAndPassword(auth, email, senha)
+    .then((userCredential) => {
+      const user = userCredential.user;
+        setSucesso('S');
+      })
+      .catch((error) => {
+        setSucesso('N');
+      });
+  } 
+  
+
+
+
+  function alterarEmail(event){
+    setEmail(event.target.value);
+  }
+
+
+  function alterarSenha(event){
+    setSenha(event.target.value);
+  }
+
+
+
+  return (
+
+    
+
+    <div className="d-flex align-items-center justify-content-center form-container">
       <form className="form-signin">
         <img className="mb-4" src="Images/logo-small2.png" alt="" />
-        <h1 className="h3 mb-3 fw-normal">Login</h1>
 
-        <div className="form-floating">
-          <input type="email" className="form-control" id="floatingInput" placeholder="E-mail" />
-          <label for="floatingInput">E-mail</label>
-        </div>
-
-        <div className="form-floating">
-          <input type="password" className="form-control" id="floatingPassword" placeholder="Senha" />
-          <label for="floatingPassword">Senha</label>
-        </div>
+        <input className="btn btn-primary" type="reset" value="Reset"></input>
         
-        <button className="w-100 btn btn-lg btn-primary" type="submit">Acessar</button>
+        <h1 className="h3 mb-3 fw-normal">Login</h1>
+        <h1 className="h3 mb-3 fw-normal">{email}- {senha}</h1>
 
-        <div className="login-links mt-5">
+        <div className="form-wrapper">
+          <div className="form-floating mb-3">
+            <input onChange={alterarEmail} type="email" className="form-control" id="floatingInput" placeholder="E-mail" />
+            <label htmlFor="floatingInput">E-mail</label>
+          </div>
+
+          <div className="form-floating mb-3">
+            <input onChange={alterarSenha} type="password" className="form-control" id="floatingPassword" placeholder="Senha" />
+            <label htmlFor="floatingPassword">Senha</label>
+          </div>
+
+          <button onClick= {LoginUsuario}className="w-100 btn btn-lg btn-primary mb-3" type="button">Acessar</button>
+        </div>
+
+        { sucesso==='N'?<div className="alert alert-danger" role="alert">E-mail ou senha inválidos</div> : 
+           <div className="alert alert-success" role="alert">Login realizado com sucesso</div>
+        }
+
+        <div className="login-links">
           <a href="#" className="mx-3">Esqueci minha senha</a>
-          <Link to ='/app/cadastro' className="mx-3" >Criar uma conta</Link>
+          <Link to='/app/cadastro' className="mx-3">Criar uma conta</Link>
         </div>
 
         <p className="mt-5 mb-3 text-muted">&copy; Desenvolvido por JovaTech</p>
       </form>
     </div>
-  }
+  );
+}
 
 export default Login2;

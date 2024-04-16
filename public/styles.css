@@ -36,9 +36,11 @@ p{
 }
 
 .imagem-redimensionada {
-    width: 1024px;
-    height: 715px;
+    width: 100px; /* Largura da imagem */
+    height: auto; /* Altura ajustada automaticamente para manter a proporção original */
+    margin-left: 100px; /* Espaço à esquerda */
 }
+
 
 #banner img{
     width: 100%;
