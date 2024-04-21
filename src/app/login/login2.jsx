@@ -38,17 +38,14 @@ function Login2() {
     setSenha(event.target.value);
   }
 
-
+  
 
   return (
-
-    
-
     <div className="d-flex align-items-center justify-content-center form-container">
       <form className="form-signin">
+     
         <img className="mb-4" src="Images/logo-small2.png" alt="" />
-
-        <input className="btn btn-primary" type="reset" value="Reset"></input>
+        <input className="btn btn-primary" type="reset" value="Voltar"></input>
         
         <h1 className="h3 mb-3 fw-normal">Login</h1>
         <h1 className="h3 mb-3 fw-normal">{email}- {senha}</h1>
@@ -67,9 +64,10 @@ function Login2() {
           <button onClick= {LoginUsuario}className="w-100 btn btn-lg btn-primary mb-3" type="button">Acessar</button>
         </div>
 
-        { sucesso==='N'?<div className="alert alert-danger" role="alert">E-mail ou senha inválidos</div> : 
-           <div className="alert alert-success" role="alert">Login realizado com sucesso</div>
-        }
+        { sucesso === 'N' ? <div className="alert alert-danger mt-2" role="alert">E-mail ou senha inválida.</div> : null}
+        { sucesso === 'S' ? <div className="alert alert-success" role="alert">Login realizado com sucesso</div> : null}
+       { /* sucesso === 'S' ? <Redirect to='/app/home' /> : null*/}
+        
 
         <div className="login-links">
           <a href="#" className="mx-3">Esqueci minha senha</a>
