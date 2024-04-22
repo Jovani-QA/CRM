@@ -8,6 +8,7 @@ import ResetSenha from './app/ResetarSenha/resetSenha.jsx';
 import Home from './app/Home/home.jsx';
 import Teste from './site/Testes/testes.jsx';
 
+/*teste_jotech@hotmail.com*/
 /*JJ-CC@2024 */
 
 
